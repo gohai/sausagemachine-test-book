@@ -61,7 +61,7 @@ scribus: $(allmarkdown)
 		-o scribus_html/$$html ; \
 	done
 
-html: clean $(allmarkdown) book.md
+html: book.md
 	cd md && pandoc --from markdown --to html -o ../book.html book.md
 
 book.md: clean $(allmarkdown)
