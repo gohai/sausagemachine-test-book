@@ -52,7 +52,8 @@ def replace_fn_links(tree, element): #replace back arrows with work "back"
             if '#fn'in anchor.get('href'):
                 anchor.text = 'back'
 
-   
+
+# GH: not sure if this is still needed (see https://github.com/jgm/pandoc/issues/1609)
 def spine(filename): # makes cover & title page linear is <spine>
     tree = ET.parse(filename)
     ET.register_namespace('epub', 'http://www.idpf.org/2007/ops')

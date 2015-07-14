@@ -71,6 +71,7 @@ book.md: clean $(allmarkdown)
 #Note: md_urlize.py script requires Django to be installed
 
 
+# GH: see https://github.com/jgm/pandoc/issues/1939
 book.epub: clean $(allmarkdown) book.md epub/metadata.xml epub/styles.epub.css epub/cover.jpg
 	cd md && pandoc \
 		--from markdown \
