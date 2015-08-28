@@ -88,8 +88,7 @@ book.epub: clean $(allmarkdown) book.md epub/metadata.xml epub/styles.epub.css e
 		--epub-embed-font=../lib/OpenSans-LightItalic.otf \
 		-o ../book.epub \
 		book.md && \
-		cd .. && \
-#		--epub-embed-font=lib/UbuntuMono-B.ttf \
+		cd ..
 
 clean:  # remove outputs
 	rm -f md/book.md  
