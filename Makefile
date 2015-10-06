@@ -62,7 +62,7 @@ scribus: $(allmarkdown)
 	done
 
 html: book.md
-	cd md && pandoc --from markdown --to html -o ../book.html book.md
+	cd md && pandoc -s --section-divs --from markdown --to html -o ../book.html book.md
 
 book.md: clean $(allmarkdown)
 	for i in $(allmarkdown) ; \
