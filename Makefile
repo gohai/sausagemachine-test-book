@@ -47,7 +47,7 @@ icmls: $(allmarkdown)
 		--to=icml \
 		--self-contained \
 		-o $$icml ; \
-	rm -f md/tmp.md \
+	rm -f md/tmp.md ; \
 	done
 
 #pandoc -f markdown -t html5 --template=scribus.html.template md/1_2-Berardi.md
