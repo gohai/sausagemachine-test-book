@@ -1,24 +1,9 @@
 @font-face{
-    font-family: 'SourceCodePro-Semibold';
-    font-weight: bold;
-    font-style: normal;
-    src:url('SourceCodePro-Semibold.otf')format("opentype");
-}
-
-@font-face{
-    font-family: 'OpenSans-Regular';
-    font-weight: bold;
-    font-style: normal;
-    src:url('OpenSans-Regular.otf')format("opentype");
-}
-
-@font-face{
     font-family: 'OpenSans-Light';
     font-weight: lighter;
     font-style: normal;
     src:url('OpenSans-Light.otf')format("opentype");
 }
-
 
 @font-face{
     font-family: 'OpenSans-LightItalic';
@@ -26,6 +11,29 @@
     font-style: italic;
     src:url('OpenSans-LightItalic.otf')format("opentype");
 }
+
+@font-face{
+    font-family: 'OpenSans-Semibold';
+    font-weight: bold;
+    font-style: normal;
+    src:url('OpenSans-Semibold.otf')format("opentype");
+}
+
+@font-face{
+    font-family: 'VAGRoundedStd-Bold';
+    font-weight: bold;
+    font-style: normal;
+    src:url('VAGRoundedStd-Bold.otf')format("opentype");
+}
+
+
+@font-face{
+    font-family: 'VAGRoundedStd-Black';
+    font-weight: normal;
+    font-style: normal;
+    src:url('VAGRoundedStd-Black.otf')format("opentype");
+}
+
 
 
 body{
@@ -52,11 +60,8 @@ p {
 }
 
 
-
-
-
 h1,h2,h3,h4{     
-    font-family: 'SourceCodePro-Semibold';
+    font-family: 'VAGRoundedStd-Bold';
     text-transform:uppercase;
     hyphens: none !important;
     -moz-hyphens: none !important;
@@ -70,22 +75,31 @@ h1,h2,h3,h4{
 
 h1{
     font-size:1.8em;
-    color: #E87511;
+    margin-bottom: 0.5em;
+    color: #d2a8d4;
+    border-bottom:5px dotted #d2a8d4;
+    padding-bottom:6px;
     page-break-before: always;
 }
 
 h2{
     font-size: 1.2em;
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 
 b,strong{
-    font-family: 'OpenSans-Regular';
+    font-family: 'OpenSans-Semibold';
+}
+
+p.italic {
+    font-family: 'OpenSans-LightItalic';
+    font-style: italic;
 }
 
 figcaption{
-    font-family: 'OpenSans-Regular';
+        font-family: VAGRoundedStd-Bold;
     font-size:0.8em;
 }
 
@@ -130,32 +144,30 @@ font-size: 0.5em;
 
 
 blockquote{
-    font-family: 'SourceCodePro-Semibold';
     padding-left: 1.5em;
     margin-left: 0px;
-    border-left: 0px #647696 solid;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
 
-a { color: #E87511;
+a { color: #d2a8d4;
     text-decoration: none;
   }
 
-a:hover { color: #E87511;
+a:hover { color: #d2a8d4;
       text-decoration: underline;
   }
 
     div.streams{
     font-family: VAGRoundedStd-Bold;
-    width: 50%;
+    width: 70%;
     min-width: 10em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-weight: bold;
-    font-size: 1.15em;
-    color: #E87511;
+    font-size: 1em;
+    color: #d2a8d4;
     -webkit-hyphens:none;
     hyphens: none;
     page-break-inside: avoid;
@@ -167,7 +179,7 @@ a:hover { color: #E87511;
 
 hr {
     height: 0;
-    color: #E87511;
+    color: #d2a8d4;
     width: 100%;
     border: dotted 5px;
     border-bottom: none;
@@ -183,14 +195,14 @@ hr.streams {
 
 
 ul {
- list-style-type: none;
- list-style: none; 
+ list-style-type: circle;
+ list-style: circle; 
 }
 
 
 section#colophon h2, section#the-volkskrant-building-manufacturing-difference-in-amsterdams-creative-city h2, section#contents h2, section#acknowledgements h2 {  
     font-size:1.8em;
-    color: #E87511;
+    color: #d2a8d4;
 }
 
 /* Images with pink backgorund at the start of chapters:
@@ -237,8 +249,7 @@ section.footnotes li a {
 }
 
 table {
-    width:99%;
-    border: 1px #E87511 solid;
+    border: 1px #d2a8d4 solid;
     border-collapse: collapse;
     vertical-align: top;
     font-size: 0.5em;
@@ -246,26 +257,26 @@ table {
 }
 
 table th {
-    border-bottom: 1px #E87511 solid;
+    border-bottom: 1px #d2a8d4 solid;
 }
 
 table th, td {
-    border-left: 1px #E87511 solid;
-    border-right: 1px #E87511 solid;
+    border-left: 1px #d2a8d4 solid;
+    border-right: 1px #d2a8d4 solid;
 }
 
 th, td {
     padding: 0.5em;
 }
 table .header {
-    color: #E87511;
-    font-family: 'OpenSans-Regular';
+    color: #d2a8d4;
+    font-family: 'VAGRoundedStd-Bold';
 }
 
 table+p, figure+p {
     text-align: right;
     font-size: 0.5em;
-    font-family: 'OpenSans-Regular';
+    font-family: 'VAGRoundedStd-Bold';
 }
 
 #colophon p:last-of-type {
@@ -276,11 +287,28 @@ table+p, figure+p {
 
 #colophon img {
     /* limit the logo's height */
-    height: 1em;
+    height: 3em;
 }
 
 figure {
     /* remove (default) margin for figures */
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.RQ::first-line {
+    color: #d2a8d4;
+    font-family: 'VAGRoundedStd-Bold';
+    text-decoration: underline;
+    margin-top: 0.8em;
+}
+
+.RQ p {
+    font-size: 1em;
+    margin-top: 0em;
+    color: #d2a8d4;
+    }
+
+span {
+    color: #d2a8d4 !important
 }
