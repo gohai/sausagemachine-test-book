@@ -95,6 +95,5 @@ book.epub: clean $(allmarkdown) book.md epub/metadata.xml epub/styles.epub.css e
 
 clean:  # remove outputs
 	rm -f md/book.md  
-	rm -f book.epub 
 	rm -f *~ */*~  #emacs files
 # improve rule: rm if file exits
