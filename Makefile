@@ -97,3 +97,5 @@ clean:  # remove outputs
 	rm -f md/book.md  
 	rm -f *~ */*~  #emacs files
 # improve rule: rm if file exits
+
+all: icmls html book.epub clean
